@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital@1&family=Dongle:wght@300;700&family=Hubballi&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,500;1,200&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    background: url(/asset/img/bg-showcase.png);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+}
+ span{
+    color: #00C897;
+}
+.nav-list ul li {
+    padding: 0rem 1rem;
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+}
+.nav-list ul li a:hover{
+    color: #00C897;
+    transition: 1s;
+}
+/* Showcase */
+.showcase{
+    display: flex;
+    align-self: center;
+    width: 90%;
+}
+.showcase-txt{
+    width: 80%;
+}
+.showcase-txt h1{
+    font-size: 3.5rem;
+}
+.showcase-txt p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.btn-showcase{
+    width: 100%;
+    display: flex;
+    padding-bottom: 10rem;
+}
+.btn-1{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #00C897;
+    color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.btn-2{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #00C897;
+    color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+/* Popular */
+
+#popular{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.popular-txt{
+    align-self: center;
+    text-align: center;
+}
+.popular-list{
+    display: flex;
+    align-self: center;
+}
+.food{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius:  0.5rem;
+    margin: 2rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+.drink{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius:  0.5rem;
+    margin: 2rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+.food a{
+    color: black;
+    align-self: center;
+    font-size: 2rem;
+}
+.drink a{
+    color: black;
+    align-self: center;
+    font-size: 2rem;
+}
+/* Recipe */
+main{
+    font-family: 'Poppins', sans-serif;
+}
+main h1{
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+main li{
+    letter-spacing: 1px;
+    list-style: decimal;
+}
+
+#drink{
+    display: flex;
+    flex-direction: column;
+}
+#food{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Article */
+
+article{
+    width: 94%;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 2rem 0;
+    border: 2px solid black;
+}
+
+article img{
+    width: 90%;
+    border-radius: 5px;
+    align-self: center;
+}
+
+/* Recipe */
+.resep{
+    display: flex;
+}
+.bahan{
+    width: 40%;
+    margin: 0 5%;
+}
+
+.cara{
+    width: 40%;
+    margin: 0 5%;
+}
+footer{
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: #00C897;
+    text-align: center;
+}
+/* Media */
+@media screen and (max-width: 1200px) {
+    .showcase-txt{
+        width: 100%;
+    }
+    :root{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    :root{
+        font-size: 10px;
+    }
+    .popular-list{
+        flex-direction: column;
+    }
+    .food{
+        height: 15rem;
+        width: 50rem;
+    }
+    .drink{
+        height: 15rem;
+        width: 50rem;
+    }
+    .resep{
+        flex-direction: column;
+    }
+    .bahan{
+        width: 80%;
+    }
+}
+@media screen and (max-widht: 600px) {
+    :root{
+        font-size: 8px;
+    }
+}
